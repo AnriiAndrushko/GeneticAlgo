@@ -4,8 +4,8 @@ namespace GeneticAlgo.Logic
 {
     internal class SelectionAlgo
     {
-        private City[] cities;
-        private Path[] currentGeneration;
+        public City[] cities;
+        public Path[] currentGeneration;
         public SelectionAlgo(int iterations, int agents, int mutationChance, City[] cities)
         {
             this.cities = cities;
