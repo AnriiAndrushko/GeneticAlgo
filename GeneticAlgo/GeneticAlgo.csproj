@@ -52,6 +52,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Logic\Objects\City.cs" />
+    <Compile Include="Logic\Objects\Path.cs" />
+    <Compile Include="Logic\SelectionAlgo.cs" />
+    <Compile Include="Logic\Utils\ArrayShuffler.cs" />
+    <Compile Include="Logic\Utils\CityGenerator.cs" />
+    <Compile Include="Logic\Utils\Crossbreeder.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">

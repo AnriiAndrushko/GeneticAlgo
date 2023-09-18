@@ -1,4 +1,6 @@
-﻿using System;
+﻿using GeneticAlgo.Logic;
+using GeneticAlgo.Logic.Utils;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,7 +24,6 @@ namespace GeneticAlgo
         {
             canvas.BackColor = Color.White;
             //canvas.Paint += new PaintEventHandler(this.canvas_Paint);
-            //this.Controls.Add(canvas);
         }
         private void StartBtn_Click(object sender, EventArgs e)
         {
@@ -32,6 +33,11 @@ namespace GeneticAlgo
 
             g.DrawLine(Pens.Red, 0, 0,
                 canvas.Size.Width, canvas.Size.Height);
+            int padding = 20;
+            var algo = new SelectionAlgo((int)IterationsInput.Value, (int)AgentsInput.Value, 
+                                        MutatorSlider.Value, CityGenerator.GetCities((int)CitiesInput.Value, 
+                                        padding, canvas.Size.Width, canvas.Size.Height));
+
         }
     }
 }

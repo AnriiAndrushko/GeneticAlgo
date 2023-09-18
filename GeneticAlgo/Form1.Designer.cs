@@ -38,10 +38,13 @@
             this.canvas = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.AgentsInput = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.MutatorSlider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CitiesInput)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IterationsInput)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.canvas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AgentsInput)).BeginInit();
             this.SuspendLayout();
             // 
             // StartBtn
@@ -140,11 +143,34 @@
             this.label5.TabIndex = 12;
             this.label5.Text = "100";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(594, 206);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(105, 26);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Number of agents in \r\nthe sample";
+            // 
+            // AgentsInput
+            // 
+            this.AgentsInput.Location = new System.Drawing.Point(597, 235);
+            this.AgentsInput.Name = "AgentsInput";
+            this.AgentsInput.Size = new System.Drawing.Size(120, 20);
+            this.AgentsInput.TabIndex = 14;
+            this.AgentsInput.Value = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            // 
             // GeneticAlgo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(728, 450);
+            this.Controls.Add(this.AgentsInput);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.canvas);
@@ -164,6 +190,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.CitiesInput)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IterationsInput)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.canvas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AgentsInput)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -181,6 +208,8 @@
         private System.Windows.Forms.PictureBox canvas;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.NumericUpDown AgentsInput;
     }
 }
 
