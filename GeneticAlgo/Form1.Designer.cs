@@ -45,6 +45,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.results = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.MutatorSlider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CitiesInput)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IterationsInput)).BeginInit();
@@ -223,18 +224,28 @@
             // 
             // results
             // 
-            this.results.Location = new System.Drawing.Point(1249, 305);
+            this.results.Location = new System.Drawing.Point(1249, 330);
             this.results.Multiline = true;
             this.results.Name = "results";
             this.results.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.results.Size = new System.Drawing.Size(113, 459);
+            this.results.Size = new System.Drawing.Size(113, 476);
             this.results.TabIndex = 19;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(1250, 314);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(91, 13);
+            this.label10.TabIndex = 20;
+            this.label10.Text = "Best from iteration";
             // 
             // GeneticAlgo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1374, 872);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.results);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
@@ -287,6 +298,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox results;
+        private System.Windows.Forms.Label label10;
     }
 }
 

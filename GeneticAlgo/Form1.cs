@@ -36,12 +36,12 @@ namespace GeneticAlgo
             {
                 algo.MakeIteration();
                 path = algo.GetBestPath();
-                results.AppendText(results.Text + path.TotalDistance + "\r\n");
+                results.AppendText(path.TotalDistance + "\r\n");
                 results.Refresh();
                 DrawPath(path, g, algo.cities, 2);
             }
             path = algo.GetBestPath();
-            results.AppendText(results.Text + path.TotalDistance + "\r\n");
+            results.AppendText(path.TotalDistance + "\r\n");
             DrawPath(path, g, algo.cities, 10);
         }
 
