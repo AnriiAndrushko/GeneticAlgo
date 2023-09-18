@@ -128,7 +128,7 @@
             this.IterationsInput.Size = new System.Drawing.Size(120, 20);
             this.IterationsInput.TabIndex = 9;
             this.IterationsInput.Value = new decimal(new int[] {
-            500,
+            200,
             0,
             0,
             0});

@@ -42,11 +42,19 @@ namespace GeneticAlgo.Logic
                 Path mut2 = mutant.child2;
                 if (random.Next(101)<percentMutation)
                 {
-                    mut1 = Crossbreeder.Mutate(mut1);
+                    int mutationCount = random.Next(cities.Length)/2;
+                    for (int j = 0; j< mutationCount; j++)
+                    {
+                        mut1 = Crossbreeder.Mutate(mut1);
+                    }
                 }
                 if (random.Next(101) < percentMutation)
                 {
-                    mut2 = Crossbreeder.Mutate(mut2);
+                    int mutationCount = random.Next(cities.Length) / 2;
+                    for (int j = 0; j < mutationCount; j++)
+                    {
+                        mut2 = Crossbreeder.Mutate(mut2);
+                    }
                 }
 
                 mutants.Add(mut1);
