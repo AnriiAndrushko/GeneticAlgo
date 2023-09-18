@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GeneticAlgo.Logic.Utils;
+using System;
 using System.Drawing;
 
 namespace GeneticAlgo.Logic.Objects
@@ -7,9 +8,11 @@ namespace GeneticAlgo.Logic.Objects
     {
         public Point Loaction { get; }
         public string Name { get; }
+        public readonly int Id;
 
         public City(Point point, string name)
         {
+            Id = IdController.GetId();
             Loaction = point;
             Name = name;
         }

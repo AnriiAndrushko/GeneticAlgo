@@ -58,6 +58,7 @@
     <Compile Include="Logic\Utils\ArrayShuffler.cs" />
     <Compile Include="Logic\Utils\CityGenerator.cs" />
     <Compile Include="Logic\Utils\Crossbreeder.cs" />
+    <Compile Include="Logic\Utils\IdController.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
