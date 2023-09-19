@@ -224,11 +224,11 @@
             // 
             // results
             // 
-            this.results.Location = new System.Drawing.Point(1249, 330);
+            this.results.Location = new System.Drawing.Point(1235, 330);
             this.results.Multiline = true;
             this.results.Name = "results";
             this.results.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.results.Size = new System.Drawing.Size(113, 476);
+            this.results.Size = new System.Drawing.Size(141, 476);
             this.results.TabIndex = 19;
             // 
             // label10
