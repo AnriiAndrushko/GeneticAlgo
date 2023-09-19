@@ -19,21 +19,38 @@ namespace GeneticAlgo.Logic.Utils
 
             int index1 = random.Next(pathLength);
             int index2 = random.Next(pathLength);
-            if (index1 > index2)
-            {
-                int tmp = index2;
-                index2 = index1;
-                index1 = tmp;
-            }
+
             HashSet<int> isPresent1 = new HashSet<int>();
             HashSet<int> isPresent2 = new HashSet<int>();
-            for (int i = index1; i < index2; i++)
+
+            if (index1 > index2)
             {
-                isPresent1.Add(parent2.CurPath[i].Id);
-                isPresent2.Add(parent1.CurPath[i].Id);
-                res1[i] = parent2.CurPath[i];
-                res2[i] = parent1.CurPath[i];
+                for (int i = index1; i < index2; i++)
+                {
+                    isPresent1.Add(parent2.CurPath[i].Id);
+                    isPresent2.Add(parent1.CurPath[i].Id);
+                    res1[i] = parent2.CurPath[i];
+                    res2[i] = parent1.CurPath[i];
+                }
             }
+            else
+            {
+                for (int i = index1; i < pathLength; i++)
+                {
+                    isPresent1.Add(parent2.CurPath[i].Id);
+                    isPresent2.Add(parent1.CurPath[i].Id);
+                    res1[i] = parent2.CurPath[i];
+                    res2[i] = parent1.CurPath[i];
+                }
+                for (int i = 0; i < index2; i++)
+                {
+                    isPresent1.Add(parent2.CurPath[i].Id);
+                    isPresent2.Add(parent1.CurPath[i].Id);
+                    res1[i] = parent2.CurPath[i];
+                    res2[i] = parent1.CurPath[i];
+                }
+            }
+
             for (int i = 0; i < index1; i++)
             {
                 if (!isPresent1.Contains(parent1.CurPath[i].Id))
